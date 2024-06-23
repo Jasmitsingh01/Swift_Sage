@@ -4,6 +4,7 @@ import gsap from "gsap";
 import SplitType from "split-type";
 import ScrollTrigger from "gsap/src/ScrollTrigger";
 import { useRef } from "react";
+import ThreeDModel from "../components/ThreeDModel";
 gsap.registerPlugin(ScrollTrigger);
 function Home() {
   const ref = useRef();
@@ -60,7 +61,7 @@ function Home() {
   });
 
   return (
-    <section className=" min-h-screen border-2 flex bg-black  text-white  justify-center items-center  flex-col py-16">
+    <section className=" min-h-screen border-2 flex  justify-center items-center  flex-col py-16">
       <header className=" flex  w-full  h-full   items-center flex-col  ">
         <h1 className=" relative z-20 font-bold text-center mb-20 text-6xl">
           Welcome to Swift Sage Solutions
@@ -69,6 +70,10 @@ function Home() {
           Boost Your Online Presence With Our Expertise
         </h3>
       </header>
+      <div className="flex justify-center items-center  mb-20">
+        <ThreeDModel/>
+        
+      </div>
       <div className=" my-auto mb-0 flex justify-center gap-20 w-full">
         <Button
           text="learn more "
